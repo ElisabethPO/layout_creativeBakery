@@ -25,6 +25,13 @@
     flex-direction: column;
     gap: 32px;
 
+    @include on-small-tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+    }
+
     @include on-tablet {
       display: flex;
       flex-direction: row;
@@ -54,6 +61,16 @@
         width: 328px;
       }
 
+      @include on-big-tablet {
+        font-size: 56px;
+        width: 544px;
+      }
+
+      @include on-mini-desktop {
+        font-size: 56px;
+        width: 544px;
+      }
+
       @include on-desktop {
         font-size: 72px;
         width: 584px;
@@ -72,6 +89,14 @@
         width: 328px;
       }
 
+      @include on-big-tablet {
+        width: 544px;
+      }
+
+      @include on-mini-desktop {
+        width: 544px;
+      }
+
       @include on-desktop {
         width: 584px;
       }
@@ -86,6 +111,12 @@
     @include on-tablet {
       display: flex;
       flex-direction: column;
+    }
+
+    @include on-mini-desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
     }
 
     @include on-desktop {
@@ -103,6 +134,12 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @include on-small-tablet{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
 
     @include on-tablet {
       display: flex;
@@ -122,6 +159,12 @@
     flex-direction: column;
     gap: 48px;
 
+    @include on-small-tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+
     @include on-tablet {
       display: flex;
       flex-direction: row;
@@ -140,6 +183,18 @@
     display: flex;
     flex-direction: column;
     width: 328px;
+  }
+
+  @include on-big-tablet {
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+  }
+
+  @include on-mini-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
   }
 
   @include on-desktop {

@@ -36,8 +36,16 @@
     flex-direction: column;
     gap: 40px;
 
+    @include on-small-tablet {
+      flex-direction: row;
+    }
+
     @include on-tablet {
       flex-direction: row;
+    }
+
+    @include on-mini-desktop {
+      gap: 308px;
     }
 
     @include on-desktop {
@@ -55,6 +63,10 @@
     width: 328px;
   }
 
+  @include on-mini-desktop {
+    width: 260px;
+  }
+
   @include on-desktop {
     width: 280px;
   }
@@ -64,6 +76,10 @@
 
     @include on-tablet {
       height: 128px;
+    }
+
+    @include on-mini-desktop {
+      height: 57px;
     }
 
     @include on-desktop {

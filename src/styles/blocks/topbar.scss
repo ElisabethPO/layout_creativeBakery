@@ -5,11 +5,21 @@
   padding: 28px 32px;
   position: relative;
 
+  &__logo {
+    width: 136px;
+    height: 32px;
+  }
+
   &__menu {
     display: none;
 
     @include on-tablet {
       display: none;
+    }
+
+    @include on-mini-desktop {
+      display: flex;
+      gap: 64px;
     }
 
     @include on-desktop {

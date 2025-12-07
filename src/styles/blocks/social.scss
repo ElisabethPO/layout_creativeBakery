@@ -3,10 +3,26 @@
   flex-direction: column;
   gap: 40px;
 
+  @include on-small-tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding-top: 48px;
+    padding-bottom: 88px;
+  }
+
   @include on-tablet {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    padding-top: 48px;
+    padding-bottom: 88px;
+  }
+
+  @include on-mini-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 308px;
     padding-top: 48px;
     padding-bottom: 88px;
   }
@@ -41,8 +57,18 @@
     transition: fill 0.3s ease;
   }
 
+  @include on-small-tablet {
+    width: 300px;
+    padding-top: 0;
+  }
+
   @include on-tablet {
     width: 328px;
+    padding-top: 0;
+  }
+
+  @include on-mini-desktop {
+    width: 260px;
     padding-top: 0;
   }
 
